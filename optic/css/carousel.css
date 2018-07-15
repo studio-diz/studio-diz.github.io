@@ -187,4 +187,6 @@ p.price-old {color: #828282;text-decoration: line-through; font-size: 13px; line
 		font-size: 32px;
 		margin-top:30px;
 	}
+	.marketing .left {display:block; position: relative; min-width:220px; max-width:280px; height:30px; left:-5px; margin: 10px auto;}
+	.marketing .right {display:block; position: relative; min-width:220px; max-width:280px; height:30px; right:-5px; margin: 10px auto;}
 }
