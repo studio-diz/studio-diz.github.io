@@ -15,6 +15,7 @@ body {
     color: #333;
     background-color: #fff;
     height: 100%;
+	overflow-x: hidden;
 }
 /* social-buttons */
 .social-buttons {display:block; margin:8px 0px; color:#BDBDBD;}
@@ -152,7 +153,7 @@ text-align:center;
 
 /* ABOUT */
 .about {padding:0px; margin: 30px 0px; position: relative;}
-.about .item-caption {display:block; min-width:390px; padding: 20px 20px 40px 40px;}
+.about .item-caption {display:block; padding: 20px 20px 40px 40px;}
 @media (min-width: 768px) {
 	.about img {width:50%;}
 }
@@ -209,3 +210,7 @@ footer .btn-secondary {
 	box-shadow:none;
 }
 footer .btn-secondary i {color: #ffffff;}
+@media (max-width: 767px) {
+	.footer-logo {text-align: center;}
+	.footer-logo img {margin: 10px auto;}
+}

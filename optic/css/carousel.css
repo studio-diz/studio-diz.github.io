@@ -176,10 +176,15 @@ p.price-old {color: #828282;text-decoration: line-through; font-size: 13px; line
 -------------------------------------------------- */
 
 @media (min-width: 768px) {
-
-  /* Remove the edge padding needed for mobile */
   .marketing {
     padding-right: 0;
     padding-left: 0;
   }
-
+}
+@media (max-width: 767px) {
+	.item-img {float:none;}
+	.item-caption H1 {
+		font-size: 32px;
+		margin-top:30px;
+	}
+}
