@@ -1,0 +1,195 @@
+/* Variables */
+@white:		#ffffff;
+@dark-gray:	#828282;
+@gray:		#BDBDBD;
+@dark-blue: #282696;
+@blue:		#09ABE4;
+@black:		#333333;
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+#myCarousel {
+	
+}
+/* Carousel base class */
+.carousel {
+  max-width:1410px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  position: relative;
+  display:block;
+/*  max-width:588px;*/
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  background-color: #777;
+}
+.item {background: linear-gradient(203.32deg, rgba(40, 38, 150, 0.98) 24.1%, @blue 123.85%);}
+.item-img {display:block; float:right;}
+.item-caption {display:block; padding: 20px 40px 40px 80px;}
+/* Новая коллекция солнечных очков */
+
+.item-caption H1 {
+font-weight: 400;
+line-height: 43px;
+font-size: 40px;
+letter-spacing: 0.05em;
+color: @white;
+margin-top:60px;
+margin-bottom:30px;
+}
+.item-caption p {
+font-weight: 300;
+line-height: 24px;
+font-size: 18px;
+letter-spacing: 0.05em;
+color: @white;
+margin-bottom:20px;
+}
+
+ 
+.item-cover{
+	position: absolute;
+    left:50%;
+	right:0;
+	top:0;
+	bottom:0;
+	background: url(../images/photo_about.png) top center no-repeat;
+	background-size: cover;
+	padding-bottom: 10px;
+}
+
+
+.carousel-control {width:60px;}
+.carousel-control.left,.carousel-control.right {background-image:none;}
+.glyphicon-chevron-left:before {
+  font-family: FontAwesome;
+  content: "\f104";
+}
+.glyphicon-chevron-right:before {
+  font-family: FontAwesome;
+  font-stretch: condensed;
+  content: "\f105";
+}
+.btn.btn-lg.btn-primary {
+    color: #fff;
+    font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 15px;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	padding:17px 37px;
+	background-color: transparent;
+    border-color: #fff;
+	border-radius: 0px;
+}
+.btn.btn-lg.btn-primary:hover {
+    color: @dark-blue;
+ 	background-color: #fff;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-color: @blue;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 90px;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#Popular .item {background: @white;}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.marketing H1 {margin-left:15px; font-size:30px;}
+.marketing .carousel-inner {margin-left:10px;}
+/* Center align the text within the three columns below the carousel */
+.marketing .col-md-3, .marketing .col-sm-6{
+	display: block;
+	height: 370px;
+	margin: 30px 5px 30px 10px;
+	text-align: left;
+	padding-bottom:20px;
+}
+.marketing .col-md-3 {min-width:220px;}
+.marketing .col-sm-6 {max-width:280px;}
+.marketing .col-md-3:hover {	box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15);}
+.marketing .col-sm-6:hover {	box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15);}
+.marketing .cell {
+	height:250px;
+	background: #F2F2F2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:20px;
+}
+.marketing .badge {
+	display:block;
+	position: absolute;
+	left: 15px;
+	top: 20px;
+	border-radius: 0px;
+	background: @blue;
+	font-weight: 300;
+	text-transform: uppercase;
+	padding: 8px 20px;
+}	
+.marketing h5, .marketing h5 {
+	display:block;
+	height:30px;
+	margin: 10px 0 px 10px 0px;
+}
+.marketing a {color: @black;}
+.marketing a:hover {color: @blue;}
+.marketing .left{left:-75px;}
+.marketing .right{right:-75px;}
+.marketing .carousel-control {color: @gray;}
+
+.marketing .btn-default {
+	font-size: 14px;
+	padding:8px 18px;
+	margin-left:5px;
+	text-transform: uppercase;
+	color: @blue;
+    border-color: @blue;
+	border-radius: 0px;
+}
+.marketing .btn-default:hover {
+	color: @white;
+	background-color: @blue;
+	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+}
+p.price {color: @blue; font-weight: 500; font-size: 16px; line-height: 16px;}
+p.price-old {color: @dark-gray;text-decoration: line-through; font-size: 13px; line-height: 13px; margin-top:-3px;}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (max-width: 767px) {
+	.item-img {float:none;}
+	.item-caption H1 {
+		font-size: 32px;
+		margin-top:30px;
+	}
+	.marketing .left {display:block; position: relative; min-width:220px; max-width:280px; height:30px; left:-5px; margin: 10px auto;}
+	.marketing .right {display:block; position: relative; min-width:220px; max-width:280px; height:30px; right:-5px; margin: 10px auto;}
+}
